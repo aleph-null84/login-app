@@ -11,8 +11,11 @@
 	
 	<%
 		//User user = (User) session.getAttribute("user");
-	    User user = (User) request.getAttribute("user");
+	    //User user = (User) request.getAttribute("user");
 	%>
+	
+	<jsp:useBean id="user" class="com.yuriy.dto.User" scope="request">
+	</jsp:useBean>
 	
 	<p>
 	Hello <%=user.getUserName() %>
