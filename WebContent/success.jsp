@@ -10,7 +10,8 @@
 	<h1>Login Successful!</h1>
 	
 	<%
-		User user = (User) session.getAttribute("user");
+		//User user = (User) session.getAttribute("user");
+	    User user = (User) request.getAttribute("user");
 	%>
 	
 	<p>

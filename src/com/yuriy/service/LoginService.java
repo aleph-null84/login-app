@@ -6,7 +6,7 @@ import com.yuriy.dto.User;
 
 public class LoginService {
 	
-	HashMap<String, String> users = new HashMap();
+	HashMap<String, String> users = new HashMap<String, String>();
 	
 	public LoginService() {
 		users.put("yuriy", "Yuriy");
@@ -24,7 +24,7 @@ public class LoginService {
 	public User getUserDetails(String userId) {
 		User user = new User();
 		user.setUserId(userId);
-		user.setUserName(users.get("userId"));
+		user.setUserName(users.get(userId));
 		return user;
 	}
 
