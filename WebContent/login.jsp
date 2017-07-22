@@ -7,7 +7,7 @@
 <title>Login Page</title>
 </head>
 <body>
-	<form action="" method="post">
+	<form action="/Login" method="post">
 		<br>User Name <input type="text" name="userId" /><br>
 		<br>Password  <input type="password" name="password" /><br>
 		<br><input type="submit" value="Submit" />
