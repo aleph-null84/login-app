@@ -8,9 +8,9 @@
 </head>
 <body>
 	<form action="" method="post">
-		<input type="text" name="userId" />
-		<input type="password" name="password" />
-		<input type="submit" />
+		<br>User Name <input type="text" name="userId" /><br>
+		<br>Password  <input type="password" name="password" /><br>
+		<br><input type="submit" value="Submit" />
 	</form>
 
 </body>
