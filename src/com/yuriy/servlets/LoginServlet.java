@@ -7,6 +7,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.yuriy.service.LoginService;
+
 /**
  * Servlet implementation class LoginServlet
  */
@@ -23,6 +25,9 @@ public class LoginServlet extends HttpServlet {
 		
 		userId = request.getParameter("userId");
 		password = request.getParameter("password");
+		
+		LoginService loginService = new LoginService();
+		boolean result = loginService.authenticate(userId, password);
 	}
 
 }
